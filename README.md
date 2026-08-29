@@ -87,7 +87,7 @@ the-talk/
 
 欢迎提 Issue / PR：调整话术风格、补充新维度、适配新平台，都可以直接开 PR。
 
-也欢迎随时联系我交流想法（GitHub: [@boscochuck6812](https://github.com/boscochuck6812)），每份贡献都非常感谢 💙
+也欢迎随时联系我交流想法：GitHub [@boscochuck6812](https://github.com/boscochuck6812) 或邮件联系也可以（邮箱见我的 GitHub 主页），每份贡献都非常感谢 💙
 
 ---
 
