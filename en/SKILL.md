@@ -1,9 +1,9 @@
 ---
-name: the-talk
+name: shall-we-talk
 description: Analyze chat history to assess where the relationship stands, then craft custom "what are we" talk scripts, rehearsal drills, and after-talk plans (triggers: what are we, should I confess, how to ask them out, situationship advice)
 ---
 
-# The Talk · Say It Out Loud
+# Shall We Talk? · Say It Out Loud
 
 Better to ask once than to guess a thousand times.
 
@@ -28,7 +28,7 @@ Trigger when the user asks any of the following:
 2. Privacy statement + get confirmation
 3. Six-dimension analysis
 4. Output the Heart Check Report
-5. Output the "The Talk" trio
+5. Output the "Shall We Talk" trio
 6. Fixed closing guidance
 
 ---
@@ -104,9 +104,9 @@ Follow the structure of `{baseDir}/templates/heart-report.md`, must include:
 - No anxiety-mongering: slow replies ≠ not interested; fewer stickers ≠ coldness;
 - Conclusions must be backed by evidence from the chats; if there is none, say plainly "not enough data to judge".
 
-## Step 5: Output the "The Talk" Trio
+## Step 5: Output the "Shall We Talk" Trio
 
-Follow the structure of `{baseDir}/templates/the-talk-scripts.md`. **Output all three parts — never just one.**
+Follow the structure of `{baseDir}/templates/shall-we-talk-scripts.md`. **Output all three parts — never just one.**
 
 ### a. Three customized scripts
 
@@ -184,32 +184,32 @@ Close with this line (may add one sentence specific to the user's situation):
 ## Folder Structure
 
 ```
-the-talk/
+shall-we-talk/
 ├── SKILL.md                     ← Chinese edition (default skill)
 ├── README.md                    ← Chinese readme
 ├── LICENSE                      ← MIT license
 ├── templates/                   ← Chinese templates
 │   ├── heart-report.md
-│   └── the-talk-scripts.md
+│   └── shall-we-talk-scripts.md
 └── en/                          ← English edition (this folder)
     ├── SKILL.md                 ← English SKILL.md (this file)
     ├── README.md                ← English readme
     └── templates/
         ├── heart-report.md
-        └── the-talk-scripts.md
+        └── shall-we-talk-scripts.md
 ```
 
 - To use the English edition: copy `en/SKILL.md` (+ `en/templates/`) over the root `SKILL.md` / `templates/`, or paste `en/SKILL.md` directly to any AI.
-- `{baseDir}` is OpenClaw's placeholder for the skill root (`the-talk/`); on platforms without it, inline the template contents into SKILL.md instead.
+- `{baseDir}` is OpenClaw's placeholder for the skill root (`shall-we-talk/`); on platforms without it, inline the template contents into SKILL.md instead.
 
 ## Install (5-second read)
 
 Pure-text SKILL.md, **platform-agnostic** — works with any AI (Claude / GPT / Gemini / DeepSeek / OpenClaw...):
 
-- **As a skill file** (platforms with skill support, e.g. OpenClaw / Claude Code): put the folder into the platform's skill directory, e.g. `~/.openclaw/workspace/skills/the-talk/`, then verify with `openclaw skills list`.
+- **As a skill file** (platforms with skill support, e.g. OpenClaw / Claude Code): put the folder into the platform's skill directory, e.g. `~/.openclaw/workspace/skills/shall-we-talk/`, then verify with `openclaw skills list`.
 - **Paste directly** (any AI): paste the full SKILL.md (frontmatter included, templates attached) and say "what are we" or "should I confess".
 
-> Tip: if filenames arrive with `---` staging prefixes (e.g. `SKILL---xxx.md`), rename them to the standard names before installing: `SKILL.md`, `README.md`, `templates/heart-report.md`, `templates/the-talk-scripts.md`.
+> Tip: if filenames arrive with `---` staging prefixes (e.g. `SKILL---xxx.md`), rename them to the standard names before installing: `SKILL.md`, `README.md`, `templates/heart-report.md`, `templates/shall-we-talk-scripts.md`.
 
 ---
 

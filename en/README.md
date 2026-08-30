@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💬 The Talk · 把话说开 / Say It Out Loud
+# 💬 Shall We Talk? · 我们聊聊吧？
 
 **Better to ask once than to guess a thousand times.**
 
@@ -32,7 +32,7 @@ Existing relationship AI skills all "read the other person's mind" (signal tests
 | 🔒 Privacy | Before analysis, explain the data is only seen by "you + your model API provider"; remind to remove sensitive info |
 | 📊 Six dimensions | Initiation, response quality, emotional warmth, detail memory, sharing urge, future orientation — each scored 0–100 with quoted evidence |
 | 🩺 Heart Check Report | Radar scores + last-30-days trend + one-line human conclusion + timing verdict |
-| 💌 The Talk trio | Three scripts (direct / gentle / half-joking) + rehearsal drills + after-talk plans |
+| 💌 Shall We Talk trio | Three scripts (direct / gentle / half-joking) + rehearsal drills + after-talk plans |
 | 🛡️ Guardrails | Blips vs systemic issues, no anxiety-mongering, PUA risk warnings, refuse manipulation requests |
 
 ## 🚀 Quick Start
@@ -41,42 +41,42 @@ Pure-text SKILL.md, **platform-agnostic** — works with any AI (Claude / GPT / 
 
 ### Option 1: install as a skill file
 
-On platforms with skill support (e.g. OpenClaw / Claude Code), copy the `the-talk/` folder into the platform's skill directory:
+On platforms with skill support (e.g. OpenClaw / Claude Code), copy the `shall-we-talk/` folder into the platform's skill directory:
 
 ```bash
 # OpenClaw example
-cp -r the-talk ~/.openclaw/workspace/skills/the-talk
-openclaw skills list   # see "the-talk" = installed
+cp -r shall-we-talk ~/.openclaw/workspace/skills/shall-we-talk
+openclaw skills list   # see "shall-we-talk" = installed
 ```
 
 ### Option 2: paste to any AI
 
 Paste the full `SKILL.md` (frontmatter included, templates attached) to any AI and say "what are we" or "should I confess".
 
-> 💡 If filenames arrive with `---` staging prefixes (e.g. `SKILL---xxx.md`), rename them to the standard names: `SKILL.md`, `README.md`, `templates/heart-report.md`, `templates/the-talk-scripts.md`.
+> 💡 If filenames arrive with `---` staging prefixes (e.g. `SKILL---xxx.md`), rename them to the standard names: `SKILL.md`, `README.md`, `templates/heart-report.md`, `templates/shall-we-talk-scripts.md`.
 
 ## 🎯 Trigger Words
 
 `what are we` · `should i confess` · `how to ask them out` · `situationship advice`
 
-Or on platforms that support `/skill` commands (e.g. OpenClaw): `/skill the-talk`
+Or on platforms that support `/skill` commands (e.g. OpenClaw): `/skill shall-we-talk`
 
 ## 📁 Project Structure (bilingual)
 
 ```
-the-talk/
+shall-we-talk/
 ├── SKILL.md                  # Chinese edition (default skill)
 ├── README.md                 # Chinese readme
 ├── LICENSE                   # MIT license
 ├── templates/                # Chinese templates
 │   ├── heart-report.md
-│   └── the-talk-scripts.md
+│   └── shall-we-talk-scripts.md
 └── en/                       # English edition (this folder)
     ├── SKILL.md              # English skill
     ├── README.md             # this file
     └── templates/
         ├── heart-report.md
-        └── the-talk-scripts.md
+        └── shall-we-talk-scripts.md
 ```
 
 To use the English edition: copy `en/SKILL.md` (+ `en/templates/`) over the root `SKILL.md` / `templates/`, or paste `en/SKILL.md` directly to any AI. Templates are referenced via `{baseDir}` on OpenClaw; elsewhere, inline them into SKILL.md.

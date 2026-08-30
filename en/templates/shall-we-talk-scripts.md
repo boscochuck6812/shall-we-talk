@@ -1,4 +1,4 @@
-# The Talk Trio (output template)
+# Shall We Talk Trio (output template)
 
 > ⚠️ Structural skeleton — replace every placeholder with real content from the user's chat history.
 > Scripts must be conversational — speakable out loud.

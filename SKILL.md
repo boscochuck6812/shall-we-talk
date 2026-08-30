@@ -1,9 +1,9 @@
 ---
-name: the-talk
+name: shall-we-talk
 description: 分析聊天记录判断感情状态，定制"我们是什么关系"摊牌话术、模拟演习与事后预案（触发词：我们是什么关系、该不该摊牌、怎么表白、暧昧怎么办）
 ---
 
-# The Talk · 把话说开
+# Shall We Talk? · 我们聊聊吧？
 
 猜心千遍，不如问心一遍。
 
@@ -28,7 +28,7 @@ description: 分析聊天记录判断感情状态，定制"我们是什么关系
 2. 隐私声明并取得确认
 3. 六维分析
 4. 输出「心动体检报告」
-5. 输出「The Talk 三件套」
+5. 输出「Shall We Talk 三件套」
 6. 结尾固定引导
 
 ---
@@ -104,9 +104,9 @@ description: 分析聊天记录判断感情状态，定制"我们是什么关系
 - 禁止制造焦虑：回复慢 ≠ 不爱；表情包少 ≠ 冷淡；
 - 结论必须能被聊天记录证据支撑，找不到证据就明说"数据不足以判断"。
 
-## 第 5 步：输出「The Talk 三件套」
+## 第 5 步：输出「Shall We Talk 三件套」
 
-按模板 `{baseDir}/templates/the-talk-scripts.md` 的结构输出。**三件套全部输出，不得只给其中一件。**
+按模板 `{baseDir}/templates/shall-we-talk-scripts.md` 的结构输出。**三件套全部输出，不得只给其中一件。**
 
 ### a. 三套定制话术
 
@@ -194,12 +194,12 @@ description: 分析聊天记录判断感情状态，定制"我们是什么关系
 ## 文件夹结构
 
 ```
-the-talk/
+shall-we-talk/
 ├── SKILL.md                     ← 本文件（中文版）
 ├── LICENSE                      ← MIT 开源许可证
 ├── templates/
 │   ├── heart-report.md          ← 「心动体检报告」输出模板
-│   └── the-talk-scripts.md      ← 「The Talk 三件套」输出模板
+│   └── shall-we-talk-scripts.md      ← 「Shall We Talk 三件套」输出模板
 └── en/                          ← 英文版
     ├── SKILL.md                 ← English skill（需英文时用这个）
     └── templates/               ← English templates
@@ -207,7 +207,7 @@ the-talk/
 
 - 需要英文版时：把 `en/SKILL.md` 与 `en/templates/` 覆盖到根目录，或直接粘贴 `en/SKILL.md` 给任意 AI。
 
-- `{baseDir}` 是 OpenClaw 的占位符，指技能根目录（即 `the-talk/`），引用模板时写作 `{baseDir}/templates/heart-report.md`；
+- `{baseDir}` 是 OpenClaw 的占位符，指技能根目录（即 `shall-we-talk/`），引用模板时写作 `{baseDir}/templates/heart-report.md`；
 - 不支持 `{baseDir}` 的平台：把两份模板内容直接内联进 SKILL.md 对应章节，或按相对路径引用同目录模板；
 - 模板是**输出结构骨架**，内容必须按用户真实的聊天记录填充，禁止照抄模板中的示例占位文本。
 
@@ -216,14 +216,14 @@ the-talk/
 本技能是纯文本 SKILL.md，**不绑定任何平台**——Claude / GPT / Gemini / DeepSeek / OpenClaw 等任意 AI 通用，两种用法任选：
 
 - **用法一：作为技能文件安装**（平台支持技能机制时，如 OpenClaw / Claude Code）
-  1. 把整个 `the-talk/` 文件夹放到该平台的技能目录，例如 `~/.openclaw/workspace/skills/the-talk/`；
-  2. 验证：`openclaw skills list` 能看到 `the-talk` 即成功（其他平台按各自方式确认加载）。
+  1. 把整个 `shall-we-talk/` 文件夹放到该平台的技能目录，例如 `~/.openclaw/workspace/skills/shall-we-talk/`；
+  2. 验证：`openclaw skills list` 能看到 `shall-we-talk` 即成功（其他平台按各自方式确认加载）。
 - **用法二：直接粘贴使用**（任何 AI 通用）
   把本文件全文（含 frontmatter，模板内容可一并附上）粘贴给任意 AI，说一句"我们该不该摊牌"即可开始。
 
-> 提示：传输 / 下载后文件名若带 `---` 暂存前缀（如 `SKILL---xxx.md`），先重命名为标准名再安装：`SKILL.md`、`README.md`、`templates/heart-report.md`、`templates/the-talk-scripts.md`。
+> 提示：传输 / 下载后文件名若带 `---` 暂存前缀（如 `SKILL---xxx.md`），先重命名为标准名再安装：`SKILL.md`、`README.md`、`templates/heart-report.md`、`templates/shall-we-talk-scripts.md`。
 
-触发：对话里说"我们该不该摊牌"等触发词；支持 `/skill` 命令的平台也可用 `/skill the-talk`。
+触发：对话里说"我们该不该摊牌"等触发词；支持 `/skill` 命令的平台也可用 `/skill shall-we-talk`。
 
 ---
 
