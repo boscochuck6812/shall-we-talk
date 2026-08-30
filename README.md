@@ -6,6 +6,8 @@
 
 一个教人「把话说开」的开源 AI 技能：从聊天记录分析感情状态，并指导你完成「确定关系」的关键对话。
 
+**中文 · [English](en/README.md)**
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Any%20AI-blue)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
@@ -65,12 +67,18 @@ openclaw skills list   # 看到 the-talk 即安装成功
 
 ```
 the-talk/
-├── SKILL.md                  # 技能主体（frontmatter + 六步流程 + 红线）
-├── README.md                 # 本文件
+├── SKILL.md                  # 技能主体（中文版：frontmatter + 六步流程 + 红线）
+├── README.md                 # 本文件（中文）
 ├── LICENSE                   # MIT 开源许可证
-└── templates/
-    ├── heart-report.md       # 「心动体检报告」输出模板
-    └── the-talk-scripts.md   # 「The Talk 三件套」输出模板
+├── templates/                # 中文模板
+│   ├── heart-report.md       # 「心动体检报告」输出模板
+│   └── the-talk-scripts.md   # 「The Talk 三件套」输出模板
+└── en/                       # 英文版
+    ├── SKILL.md              # English skill
+    ├── README.md             # English readme
+    └── templates/            # English templates
+        ├── heart-report.md
+        └── the-talk-scripts.md
 ```
 
 模板在 OpenClaw 中通过 `{baseDir}` 引用（指技能根目录 `the-talk/`），例如 `{baseDir}/templates/heart-report.md`；其他平台不支持 `{baseDir}` 时，把模板内容内联进 SKILL.md 或按相对路径引用即可。

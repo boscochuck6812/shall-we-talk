@@ -195,11 +195,17 @@ description: 分析聊天记录判断感情状态，定制"我们是什么关系
 
 ```
 the-talk/
-├── SKILL.md                     ← 本文件
-└── templates/
-    ├── heart-report.md          ← 「心动体检报告」输出模板
-    └── the-talk-scripts.md      ← 「The Talk 三件套」输出模板
+├── SKILL.md                     ← 本文件（中文版）
+├── LICENSE                      ← MIT 开源许可证
+├── templates/
+│   ├── heart-report.md          ← 「心动体检报告」输出模板
+│   └── the-talk-scripts.md      ← 「The Talk 三件套」输出模板
+└── en/                          ← 英文版
+    ├── SKILL.md                 ← English skill（需英文时用这个）
+    └── templates/               ← English templates
 ```
+
+- 需要英文版时：把 `en/SKILL.md` 与 `en/templates/` 覆盖到根目录，或直接粘贴 `en/SKILL.md` 给任意 AI。
 
 - `{baseDir}` 是 OpenClaw 的占位符，指技能根目录（即 `the-talk/`），引用模板时写作 `{baseDir}/templates/heart-report.md`；
 - 不支持 `{baseDir}` 的平台：把两份模板内容直接内联进 SKILL.md 对应章节，或按相对路径引用同目录模板；
